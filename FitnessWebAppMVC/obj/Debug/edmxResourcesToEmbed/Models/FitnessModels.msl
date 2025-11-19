@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FitnessDTModelStoreContainer" CdmEntityContainer="FitnessDTEntities">
+    <EntitySetMapping Name="AdminTbls">
+      <EntityTypeMapping TypeName="FitnessDTModel.AdminTbl">
+        <MappingFragment StoreEntitySet="AdminTbl">
+          <ScalarProperty Name="adminId" ColumnName="adminId" />
+          <ScalarProperty Name="adminName" ColumnName="adminName" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblContacts">
+      <EntityTypeMapping TypeName="FitnessDTModel.TblContact">
+        <MappingFragment StoreEntitySet="TblContact">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="subject" ColumnName="subject" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblUsers">
+      <EntityTypeMapping TypeName="FitnessDTModel.TblUser">
+        <MappingFragment StoreEntitySet="TblUser">
+          <ScalarProperty Name="personName" ColumnName="personName" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="postalCode" ColumnName="postalCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
